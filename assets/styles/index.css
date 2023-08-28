@@ -1,5 +1,5 @@
 :root {
-    --1: #000;
+    --1: #B75D69;
     --2: #000;
     --3: #000;
     --4: #000;
@@ -10,12 +10,14 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #e7e7e7;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #8851af;
 }
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +30,42 @@ main {
     justify-content: center;
 }
 
-svg {
-    background-color: var(--1);
+h1, h2 {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TooltipLegend {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#legend {
+    width: 140px;
+    height: 340px;
+    padding: 15px;
+}
+
+.tile:is(:hover, :focus) {
+    fill: #310055;
+}
+
+#tooltip {
+    visibility: hidden;
+    width: 250px;
+    min-height: 160px;
+    margin-top: 2px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
 }

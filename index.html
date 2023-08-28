@@ -7,16 +7,52 @@
     <meta name="description"
         content="Tree Map Diagram created with D3.js JavaScript library in HTML, CSS and JavaScript Vanilla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <title>Tree Map Diagram - D3.js</title>
 </head>
 
 <body>
     <main>
-        <h1 id="title"></h1>
-        <svg></svg>
+        <h1 id="title">Highest Grossing Movies</h1>
+        <h2 id="description">Top 95 Highest Grossing Movies Sorted by Revenue</h2>
+        <section>
+            <svg id="svg"></svg>
+            <div class="TooltipLegend">
+                <div id="tooltip"></div>
+                <svg id="legend">
+                    <g>
+                        <rect class="legend-item" x="10" y="0" height="40" width="40" fill="#3c0663"></rect>
+                        <text x="60" y="25" fill="#fff">Action</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="40" height="40" width="40" fill="#4a0a77"></rect>
+                        <text x="60" y="65" fill="#fff">Drama</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="80" height="40" width="40" fill="#5a108f"></rect>
+                        <text x="60" y="105" fill="#fff">Adventure</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="120" height="40" width="40" fill="#6818a5"></rect>
+                        <text x="60" y="145" fill="#fff">Family</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="160" height="40" width="40" fill="#8b2fc9"></rect>
+                        <text x="60" y="185" fill="#fff">Animation</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="200" height="40" width="40" fill="#ab51e3"></rect>
+                        <text x="60" y="225" fill="#fff">Comedy</text>
+                    </g>
+                    <g>
+                        <rect class="legend-item" x="10" y="240" height="40" width="40" fill="#bd68ee"></rect>
+                        <text x="60" y="265" fill="#fff">Biography</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
     </main>
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
 
 </html>
